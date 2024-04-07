@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\presentation",
+    "\\src\\presentation\\screens",
+    "\\src\\presentation\\screens\\home"
   ],
+  "SelectedNode": "\\src\\presentation\\screens\\home\\HomeScreen.tsx",
   "PreviewInSolutionExplorer": false
 }
