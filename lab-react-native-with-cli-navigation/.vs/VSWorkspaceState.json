@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\presentation",
     "\\src\\presentation\\screens",
-    "\\src\\presentation\\screens\\home"
+    "\\src\\presentation\\screens\\home",
+    "\\src\\presentation\\screens\\Products"
   ],
-  "SelectedNode": "\\src\\presentation\\screens\\home\\HomeScreen.tsx",
+  "SelectedNode": "\\src\\presentation\\screens\\Products\\ProductsScreen.tsx",
   "PreviewInSolutionExplorer": false
 }

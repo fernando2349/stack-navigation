@@ -1,9 +1,7 @@
-import {Text, View} from "react-native";
-import HomeScreen from "../home/HomeScreen";
-import ProductScreen from './ProductScreen';
-import { globalStyles } from "../../theme/theme";
+import { Text, View } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import PrimaryButton from "../../components/PrimaryButton";
+import { globalStyles } from "../../theme/theme";
 
 const productos = [
     { id: 1, name: 'Camiseta de algodón', price: 20.99, category: 'Ropa' },
