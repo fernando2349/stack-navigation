@@ -2,6 +2,7 @@ import { Text, View } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import PrimaryButton from "../../components/PrimaryButton";
 import { globalStyles } from "../../theme/theme";
+import { useNavigation } from "@react-navigation/native";
 
 const productos = [
     { id: 1, name: 'Camiseta de algodón', price: 20.99, category: 'Ropa' },
@@ -12,6 +13,7 @@ const productos = [
     { id: 6, name: 'Reloj inteligente', price: 129.99, category: 'Tecnología' }
   ];
   const ProductsScreen = () => {
+    const navegation = useNavigation ();
     return (
         <View style={globalStyles.container}>
             <Text style={{marginBottom:10, fontSize:20}}>Productos</Text>
@@ -24,7 +26,7 @@ const productos = [
                         ({item }) => (
                         // Componente PrimaryButton para cada producto
                         <PrimaryButton
-                            onPress={() : void => {}}
+                            onPress={() : void => {navegation.navigate('Product' as never)}}
                                 // Lógica para manejar el botón presionado
                             label={item.name}
                         />
@@ -32,6 +34,8 @@ const productos = [
                 }
                 />
 
+                <Text style={{marginBottom: 10, fontSize: 20}}>Ajustes</Text>
+                <PrimaryButton label="Configuracion" onPress={() => navegation.navigate('Settings' as never)} />
                 {/* Título para la sección de ajustes */}
                 <Text style={{ marginBottom: 10, fontSize: 20 }}>Ajustes</Text>
             </View>
